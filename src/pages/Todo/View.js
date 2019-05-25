@@ -1,5 +1,6 @@
 import React from 'react'
 import TopBar from '../../components/TopBar';
+import Title from '../../components/Title';
 
 
 export default function View() {
@@ -7,7 +8,7 @@ export default function View() {
         <div>
             <div className="header">
                 <TopBar labels={['first', 'second', 'third']} />
-                <div className="title">To Do List</div>
+                <Title value='To Do List' />
             </div>
             <div className="menu-bar">
                 <ul className="tabs">
