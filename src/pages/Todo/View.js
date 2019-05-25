@@ -1,15 +1,12 @@
 import React from 'react'
+import TopBar from '../../components/TopBar';
 
 
 export default function View() {
     return (
         <div>
             <div className="header">
-                <div className="top-bar">
-                    <span className="right-label"></span>
-                    <span className="center-label"></span>
-                    <span className="left-label"></span>
-                </div>
+                <TopBar labels={['first', 'second', 'third']} />
                 <div className="title">To Do List</div>
             </div>
             <div className="menu-bar">
