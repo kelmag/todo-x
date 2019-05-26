@@ -1,6 +1,7 @@
 import React from 'react'
 import TopBar from '../../components/TopBar';
 import Title from '../../components/Title';
+import Button from '../../components/Button';
 
 
 export default function View() {
@@ -15,7 +16,7 @@ export default function View() {
                     <li className="tab" id="todo">To Do</li>
                     <li className="tab" id="done">Done</li>
                 </ul>
-                <button className="config-button" id="config-button"><span role="img" aria-label="config">⚙️</span></button>
+                <Button className="config-button" id="config-button" value='⚙️' />
             </div>
             <div className="tasks-todo">
                 <div className="task-line">task one</div>
