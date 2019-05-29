@@ -9,7 +9,7 @@ export default function View() {
         <div>
             <div className="header">
                 <TopBar labels={['first', 'second', 'third']} />
-                <Title value='To Do List' />
+                <Title value='TO DO LIST' />
             </div>
             <div className="menu-bar">
                 <ul className="tabs">
