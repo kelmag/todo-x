@@ -1,9 +1,9 @@
 import React from 'react'
+import "./index.css"
 
-
-export default function View({ value, className, id }) {
+export default function View({ value, id }) {
     return (
-        <button className={className} id={id}>
+        <button className="button" id={id}>
             <span role="img" aria-label="config">{value}</span>
         </button>
     )
