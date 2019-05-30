@@ -1,11 +1,12 @@
 import React from 'react'
+import "./index.css"
 
 
 
-export default function View() {
+export default function View({ children }) {
     return (
-        <div>
-
+        <div className="tasks-container">
+            {children}
         </div>
     )
 }

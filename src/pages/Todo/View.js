@@ -4,6 +4,9 @@ import Title from '../../components/Title';
 import Button from '../../components/Button';
 import MenuBar from '../../components/MenuBar';
 import Tabs from '../../components/Tabs';
+import TasksContainer from '../../components/TasksContainer';
+import TasksTodo from '../../components/TasksContainer/Components/TasksTodo';
+import TasksDone from '../../components/TasksContainer/Components/TasksDone';
 
 
 export default function View() {
@@ -17,16 +20,11 @@ export default function View() {
                 <Tabs values={["Todo", "Done"]} />
                 <Button className="config-button" id="config-button" value='settings' />
             </MenuBar>
-            <div className="tasks-todo">
-                <div className="task-line">task one</div>
-                <div className="task-line">task two</div>
-                <div className="task-line">task three</div>
-            </div>
-            <div className="tasks-done">
-                <div className="task-line">task one</div>
-                <div className="task-line">task two</div>
-                <div className="task-line">task three</div>
-            </div>
+            <TasksContainer >
+                <TasksTodo />
+                <TasksDone />
+            </TasksContainer>
+
         </div>
     )
 }
