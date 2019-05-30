@@ -1,0 +1,16 @@
+.task-line {
+    display: flex;
+    margin: 10px 0;
+}
+
+.task-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    min-height: 25px;
+    height: 25px;
+    color: #ECECEC;
+    padding: 0px 11px;
+}
