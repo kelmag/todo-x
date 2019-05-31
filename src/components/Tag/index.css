@@ -1,0 +1,14 @@
+.tag {
+    background: #FFD600;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    max-height: 17px;
+    width: 34px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
