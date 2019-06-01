@@ -7,8 +7,28 @@
     width: 34px;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 12px;
+    line-height: 17px;
     text-align: center;
     color: #FFFFFF;
+}
+
+.IMP {
+    background-color: #17A0FB;
+}
+
+.ASAP {
+    background-color: #5C9648;
+}
+
+.URG {
+    background-color: #F24824;
+}
+
+.IDK {
+    background-color: #FFD600;
+}
+
+.LOW {
+    background-color: #C4C4C4;
 }
