@@ -3,10 +3,11 @@ import './index.css';
 import Tab from './Components/Tab';
 
 
-export default function View({ values }) {
+export default function View(props) {
+    const { values, tab, setTab } = props;
     return (
         <div className="tabs-container">
-            {values && values.map((tab, i) => (<Tab value={tab} selected={(i === 0) && true} />))}
+            {values && values.map((tabElement, i) => (<Tab key={i} tabId={i} value={tabElement} setTab={setTab} tab={tab} selected={(i === tab) && true} />))}
         </div>
     )
 }

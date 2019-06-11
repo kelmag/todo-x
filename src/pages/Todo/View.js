@@ -9,7 +9,8 @@ import TasksTodo from '../../components/TasksContainer/Components/TasksTodo';
 import TasksDone from '../../components/TasksContainer/Components/TasksDone';
 
 
-export default function View() {
+export default function View(props) {
+    const { tab, setTab } = props;
     return (
         <div>
             <div className="header">
@@ -17,12 +18,12 @@ export default function View() {
                 <Title value='TO DO LIST' />
             </div>
             <MenuBar>
-                <Tabs values={["Todo", "Done"]} />
+                <Tabs values={["Todo", "Done"]} tab={tab} setTab={setTab} />
                 <Button className="config-button" id="config-button" value='settings' />
             </MenuBar>
             <TasksContainer >
-                <TasksTodo />
-                <TasksDone />
+                {tab === 0 && <TasksTodo />}
+                {tab === 1 && <TasksDone />}
             </TasksContainer>
 
         </div>
