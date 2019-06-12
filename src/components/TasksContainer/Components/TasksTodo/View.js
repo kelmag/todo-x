@@ -1,6 +1,7 @@
 import React from 'react'
 import "./index.css"
 import TaskLine from '../TaskLine';
+import TaskAdd from '../TaskAdd';
 
 
 export default function View() {
@@ -10,6 +11,7 @@ export default function View() {
             <TaskLine value="lorem ipsum is a dummy text ..." tag='URG' />
             <TaskLine value="lorem ipsum is a dummy text ..." tag='IDK' />
             <TaskLine value="lorem ipsum is a dummy text ..." tag='LOW' />
+            <TaskAdd value="lorem ipsum is a dummy text ..." tag='LOW' />
         </div>
     )
 }
